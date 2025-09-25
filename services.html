@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="shortcut icon" href="/favico.ico" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="services.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<body>
+    <header>
+        <nav>
+             <div class="head-logo">
+                <img src="/cs1.png" alt="image">
+             </div>
+            <div class="left">Chandrasekhar Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/index.html">
+                        <li>Home
+                    </a></li>
+                    <a href="/about.html">
+                        <li>About
+                    </a></li>
+                    <a href="/services.html">
+                        <li>Services
+                    </a></li>
+                    <a href="/contact.html">
+                        <li>Contact Me
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>What I Offer</h2>
+        <p>Providing professional web development services to help businesses and individuals build their online
+            presence with modern, responsive, and high-performance websites.</p>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services-container">
+            <!-- Hero Section -->
+            <div class="service-box">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I build modern, fully responsive, and SEO-friendly websites tailored to your needs.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Frontend Development</h3>
+                <p>Interactive and visually appealing user interfaces with smooth animations.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-database"></i>
+                <h3>Backend Development</h3>
+                <p>Secure, scalable, and robust back-end systems with API & database integration.</p>
+            </div>
+
+            <!-- <div class="service-box">
+        <i class="fas fa-bug"></i>
+        <h3>Bug Fixing & Optimization</h3>
+        <p>Fixing issues, improving speed, and making sure websites run smoothly.</p>
+      </div> -->
+
+            <div class="service-box">
+                <i class="fas fa-user-tie"></i>
+                <h3>Portfolio Websites</h3>
+                <p>Elegant personal portfolios to showcase skills, achievements, and branding.</p>
+            </div>
+
+            <!-- <div class="service-box">
+        <i class="fas fa-rocket"></i>
+        <h3>Deployment & Hosting</h3>
+        <p>Deploying websites on Netlify, Vercel, GitHub Pages with domain setup.</p>
+      </div> -->
+
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer">
+            <p>© 2025 MyPortfolio. All Rights Reserved.</p>
+        </div>
+        <div class="logo">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/chandrasekhar-samal-a50356318/" target="_blank">
+                    <img class="link-logo" src="/linkedin.png" alt="linkedin-logo"></a>
+                <a href="https://github.com/Chandrasekhar0707" target="_blank">
+                    <img src="github.png" alt="Github" class="git-logo"></a>
+                <a href="https://x.com/home" target="_blank">
+                    <img src="/twitter.png" alt="Github" class="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/instagram .png" alt="Github" class="instac:\Users\Chandrasekhar\Downloads\instagram (1).png"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==== Scroll Animation JS ====-->
+    <script>
+        const serviceBoxes = document.querySelectorAll('.service-box');
+
+        function showServices() {
+            serviceBoxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (boxTop < windowHeight - 50) {
+                    box.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showServices);
+        window.addEventListener('load', showServices);
+    </script>
+</body>
+
+</html>

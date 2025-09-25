@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        /* background-color: rgb(255, 255, 255); */
+        color: white;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(18, 4, 62);
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover {
+        color: rgb(93, 93, 216);
+        font-size: 1.04rem;
+    }
+
+    main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 35px 84px;
+        margin-top: -48px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+    }
+
+    /* .firstSection>div {
+    width: 30%;
+} */
+
+    .leftSection {
+        font-size: 2rem;
+        padding-top: 34px;
+    }
+
+    .rightSection {
+        height: 370px;
+        width: 371px;
+        background-color: #14427e;
+        border-radius: 50%;
+        /* border: 5px solid #4caf50; */
+        overflow: hidden;
+        padding-left: 9px;
+        padding-top: 0px;
+        /* animation: spin 4s linear infinite; Rotating animation */
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    img {
+        height: 460px;
+        object-fit: cover;
+    }
+
+
+    .purple {
+        color: rgb(148, 78, 214);
+    }
+
+    .text-gray {
+        color: gray
+    }
+
+    #element {
+        color: rgb(111, 29, 188);
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.8rem;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+             <div class="head-logo">
+                <img src="/cs1.png" alt="image">
+             </div>
+            <div class="left">Chandrasekhar Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/index.html">
+                        <li>Home
+                    </a></li>
+                    <a href="/about.html">
+                        <li>About
+                    </a></li>
+                    <a href="/services.html">
+                        <li>Services
+                    </a></li>
+                    <a href="/contact.html">
+                        <li>Contact Me
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Chandrasekhar</span>
+
+                <div>Scroll Down to</div>
+                <!-- <div>Web Developer</div> -->
+                <!-- <div>And i am a Web Developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="my-image.png" alt="my image">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <!-- <span class="text-gray">What i have done so far</span> -->
+            <h1>About Me</h1>
+            <div class="box">
+                <div class="card" role="region" aria-labelledby="section1-label">
+                    <button id="section1-toggle" class="summary-btn" aria-expanded="false"
+                        aria-controls="section1-content">
+                        <span class="title">
+                            <span class="dot" aria-hidden="true"></span>
+                            <strong id="section1-label">Click to expand and learn more about me</strong>
+                        </span>
+                        <span class="arrow" aria-hidden="true"><img class="plus-img" src="plus.png" alt="#"></span>
+                    </button>
+
+                    <div id="section1-content" class="content-wrap" hidden>
+                        <div class="content">
+                            <p>
+                                Hi, I’m Chandrasekhar Samal, a final-year Computer Science and Engineering student at
+                                Radhakrishna Institute of Technology and Engineering, Odisha. I have a strong interest
+                                in Web Development, Cloud Computing, and Data Engineering.
+                            </p>
+                            <br>
+                            <p>
+                                I’ve completed virtual internships in AI-ML and Data Engineering with AWS Academy &
+                                AICTE, where I worked on machine learning models, cloud-native deployments, and scalable
+                                data pipelines
+                            </p>
+                            <br>
+                            <p>
+                                I also enjoy building projects like a Spotify Clone, Amazon Clone, and a Weather
+                                Application with Google Maps & APIs. I have Strong Interest in Web Development and I
+                                will built these projects helped me improve my skills in
+                                HTML, CSS, JavaScript, Python and React.
+                            </p>
+                            <br>
+                            <p>
+                                My goal is to start my career as a Software Developer / Data Engineer, where I can apply
+                                my skills to build scalable and impactful solutions.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <p class="note"></p> -->
+                </div>
+            </div>
+
+            <h1>My Journey in Tech</h1>
+            <div class="box">
+                <div class="card" role="region" aria-labelledby="section1-label">
+                    <button id="section1-toggle" class="summary-btn" aria-expanded="false"
+                        aria-controls="section1-content">
+                        <span class="title">
+                            <span class="dot" aria-hidden="true"></span>
+                            <strong id="section1-label">Click to expand and learn more about me</strong>
+                        </span>
+                        <span class="arrow" aria-hidden="true"><img class="plus-img" src="plus.png" alt="#"></span>
+                    </button>
+
+                    <div id="section1-content" class="content-wrap" hidden>
+                        <div class="content">
+                            <p>
+                                Since the beginning of my Computer Science journey, I have been passionate about
+                                exploring how technology solves real-world problems. Over time, I developed strong
+                                skills in programming, web development, cloud computing, and data engineering through
+                                continuous learning, projects, and internships.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <p class="note"></p> -->
+                </div>
+            </div>
+
+            <h1>Internships</h1>
+            <div class="box">
+                <div class="card" role="region" aria-labelledby="section1-label">
+                    <button id="section1-toggle" class="summary-btn" aria-expanded="false"
+                        aria-controls="section1-content">
+                        <span class="title">
+                            <span class="dot" aria-hidden="true"></span>
+                            <strong id="section1-label">Click to expand and learn more about my Internships</strong>
+                        </span>
+                        <span class="arrow" aria-hidden="true"><img class="plus-img" src="plus.png" alt="#"></span>
+                    </button>
+
+                    <div id="section1-content" class="content-wrap" hidden>
+                        <div class="content">
+                            <p>AI-ML Virtual Intern, AICTE EduSkills & AWS Academy</p>
+                            <ul>
+                                <li>
+                                    Gained hands-on experience with machine learning models, including data
+                                    preprocessing,
+                                    supervised and unsupervised learning, and cloud-based ML deployment. Developed and
+                                    evaluated Python-based models using Jupyter Notebooks under AWS Academy guidance
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="content">
+                            <p>Data Engineering Virtual Intern, EduSkills AICTE & AWS Academy</p>
+                            <ul>
+                                <li>
+                                    Built scalable data pipelines and ETL workflows. Focused on data ingestion,
+                                    transformation, and warehousing using AWS services like S3, Glue, and Redshift for
+                                    managing large datasets and cloud-based solutions.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<script>
+    var typed = new Typed("#element", {
+        strings: ["Check", "About Me",],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+    });
+
+
+    document.querySelectorAll('.summary-btn').forEach(btn => {
+        const contentWrap = btn.nextElementSibling;
+
+        function open() {
+            contentWrap.hidden = false;
+            void contentWrap.offsetHeight;
+            contentWrap.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
+        function close() {
+            contentWrap.classList.remove('open');
+            contentWrap.addEventListener('transitionend', function handler(e) {
+                if (e.propertyName === 'max-height' && !contentWrap.classList.contains('open')) {
+                    contentWrap.hidden = true;
+                }
+                contentWrap.removeEventListener('transitionend', handler);
+            });
+            btn.setAttribute('aria-expanded', 'false');
+        }
+
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            expanded ? close() : open();
+        });
+    });
+</script>
+
+</html>
